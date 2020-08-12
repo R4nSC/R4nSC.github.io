@@ -1,9 +1,0 @@
-@font-face {
-	font-family: 'Title Font';
-	src: url(./fonts/KaushanScript-Regular.ttf);
-}
-
-.title-name {
-    font-family: Title Font;
-    border-bottom: solid 1px #000000;
-}
