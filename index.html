@@ -3,129 +3,463 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
     <link rel="stylesheet" type="text/css" href="./css/app.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/be1549972e.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
     <title>R4nSC Portfolio</title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
-        <a class="navbar-brand" href="./index.html">Portfolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./views/skills.html">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./views/works.html">Works</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./views/contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="row">
-            <h1 class="d-block mx-auto title-name">About</h1>
-        </div>
-        <div class="row">
-            <div class="col-md-4 p-4">
-                <img src="./img/user_icon.jpg" alt="user_icon" width="230" height="230" class="d-block mx-auto rounded">
+<body id="page-top">
+    <!-- navbar -->
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+            <a class="navbar-brand" href="#page-top">R4nSC Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#works">Works</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
             </div>
-            <div class="col-md-7 pt-5 ml-4 mr-4">
-                <table class="table">
-                    <tbody>
-                      <tr>
-                        <th scope="row" style="width:25%">名前</th>
-                        <td style="width:75%">竹内　廉 (Ren Takeuchi)</td>
-                      </tr>
-                      <tr>
-                        <th scope="row" style="width:25%">生年月日</th>
-                        <td style="width:75%">1998/08/24</td>
-                      </tr>
-                      <tr>
-                        <th scope="row" style="width:25%">所属</th>
-                        <td style="width:75%">静岡大学 情報学部 情報科学科 修士4年</td>
-                      </tr>
-                      <tr>
-                        <th scope="row" style="width:25%">趣味</th>
-                        <td style="width:75%">ゲーム(PS4，Switch)，音楽鑑賞(邦楽ロック)，Youtubeなどの動画鑑賞</td>
-                      </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-11 pt-5 ml-4 mr-4">
-                <table class="table">
-                    <tbody>
-                    <tr>
-                        <th scope="row" style="width:25%">自己PR</th>
-                        <td style="width:75%">
-                          静岡大学情報学部情報科学科の竹内　廉と申します．<br>
-                          工業高校の情報系の学科に進学してから約7年間プログラミングを取り組んできました．
-                          高校生の頃から競技プログラミングに力を入れて取り組み，アルゴリズムやデータ構造の様々な知識を習得してきました．
-                          高校では様々な競技プログラミング大会に参加し，本戦出場や賞をいただいています．
-                          大学では主にAtcoderという競技プログラミングサイトのコンテストに定期的に参加し，より素早い実装力とアルゴリズムを考える力を身に付けました．<br>
-                          また，Webプログラミングに興味があり，高校の部活動や大学での講義で様々なWebプログラミング用の言語に触れてきました．
-                          主にフロントエンドの部分を担当することが多かったですが，バックエンドの技術についても学習し，少し触れたこともあります．
-                          そのため，フロントエンドとバックエンドのどちらも十分に開発できる技術と知識を習得していると感じています．<br>
-                          さらに，高校や大学の講義で複数人で１つの作品を制作するグループワークに取り組む機会が多々ありました．
-                          それらのグループワークでリーダーを務めることが多かったです．
-                          グループワーク以外では高校の部活や大学のサークルでも部長を勤めていました．
-                          なので，班員や部員のそれぞれの特徴を生かして個人にあった的確な指示を出したり，締め切りなどを考慮してスケジュールを組んだりするリーダーシップの能力には長けていると感じています．
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+        </nav>
     </div>
-    <div class="w-100 footer-line"></div>
-    <footer class="w-100 footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h5>R4nSC Portfolio</h5>
-            <p style="color:#BBBBBB">Ren Takeuchi</p>
-            <p style="color:#BBBBBB; font-size: 15px;"><i class="far fa-envelope"></i> : takeuchi@sec.inf.shizuoka.ac.jp</p>
-          </div>
-          <div class="col-md-4" style="color:#CCCCCC">
-            <ul style="list-style: none; padding-left: 0;">
-              <li>
-                <a href="./index.html" style="color:#CCCCCC">About</a>
-              </li>
-              <li>
-                <a href="./views/skills.html" style="color:#CCCCCC">Skills</a>
-              </li>
-              <li>
-                <a href="./views/works.html" style="color:#CCCCCC">Works</a>
-              </li>
-              <li>
-                <a href="./views/contact.html" style="color:#CCCCCC">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <div style="font-size:30px;">
-              <a href="https://github.com/R4nSC" style="color:#CCCCCC; margin: 0px 5px;"><i class="fab fa-github"></i></a>
-              <a href="https://twitter.com/" style="color:#CCCCCC; margin: 0px 5px;"><i class="fab fa-twitter"></i></a>
-            </div>
-          </div>
+
+    <!-- header -->
+    <header class="port-head d-flex">
+        <div class="container text-center my-auto">
+            <p class="mb-1 head-fonts-h1">Portfolio</p>
+            <p class="mb-5 head-fonts-h2"><em>University Student / Informatics</em></p>
         </div>
-      </div>
-      <div style="padding:10px; text-align: right; color:#CCCCCC; font-size: 13px;">
-        <span>Copyright &copy; 2020 <a href="https://github.com/R4nSC" style="color:#CCCCCC;">Ren Takeuchi</a></span>
+    </header>
+
+    <!-- About -->
+    <section class="content-section bg-light" id="about">
+        <div class="container">
+            <div class="row">
+                <h1 class="d-block mx-auto title-name">About</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-4 p-4">
+                    <img src="./img/user_icon2.jpg" alt="user_icon" width="230" height="230" class="d-block mx-auto rounded">
+                </div>
+                <div class="col-md-8 p-4">
+                    <table class="table">
+                        <tbody>
+                          　<tr>
+                                <th scope="row" style="width:25%">名前</th>
+                                <td style="width:75%">竹内　廉 (Ren Takeuchi)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" style="width:25%">所属</th>
+                                <td style="width:75%">静岡大学 情報学部 情報科学科 学士4年 大木研究室</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" style="width:25%">趣味</th>
+                                <td style="width:75%">ゲーム(PS4，Switch)，音楽鑑賞(邦楽ロック)，Youtubeなどの動画鑑賞</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 p-4">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th scope="row" style="width:25%">競技プログラミング</th>
+                                <td style="width:75%">
+                                高校(工業高校の情報系学科に進学)では競技プログラミングに力を入れて取り組み，アルゴリズムやデータ構造の様々な知識を習得しました． そして，いくつかの競技プログラミング大会に参加し，本戦出場や賞をいただきました．
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" style="width:25%">Webプログラミング</th>
+                                <td style="width:75%">
+                                    Webプログラミングに興味があり，高校の部活動や大学の講義で様々なWebプログラミング用の言語に触れてきました．フロントエンド，バックエンドともに十分開発できる知識や技術を習得していると感じています．
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" style="width:25%">リーダーシップ</th>
+                                <td style="width:75%">
+                                    高校や大学の講義でのグループワークでリーダーを務める機会が多くありました．また，グループワーク以外でも高校の部活動や大学のサークルでも部長を勤めました．班員一人一人の特徴にあった的確な指示を出したり，締め切りなどを考慮してスケジュールを組んだりすることを実際に経験することでリーダーに必要な能力を養うことができました．
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill -->
+    <section class="content-section bg-info pb-5" id="skills">
+        <div class="container">
+            <div class="row">
+                <h1 class="d-block mx-auto title-name-stripe">Skills</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card-deck text-center">
+                        <div class="row w-100">
+                            <div class="col-lg-4 mt-4">
+                                <div class="card h-100">
+                                    <div class="card-header font-weight-bold"><i class="fas fa-laptop-code"></i>&nbsp;Webプログラミング</div>
+                                    <div class="card-body">
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" style="width:45%">技術</th>
+                                                    <th scope="col" style="width:55%">習熟度</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row"><i class="fab fa-html5"></i>&nbsp;HTML</th>
+                                                    <td><meter value="1"></meter><span style="margin-left: 8px">100%</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><i class="fab fa-css3-alt"></i>&nbsp;CSS</th>
+                                                    <td><meter value="0.9"></meter><span style="margin-left: 15px">90%</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><i class="fab fa-js-square"></i>&nbsp;JavaScript</th>
+                                                    <td><meter value="0.5"></meter><span style="margin-left: 15px">50%</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><i class="fab fa-php"></i>&nbsp;PHP</th>
+                                                    <td><meter value="0.8"></meter><span style="margin-left: 15px">80%</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mt-4">
+                                <div class="card h-100">
+                                    <div class="card-header font-weight-bold"><i class="fas fa-laptop-code"></i>&nbsp;FW・ライブラリ</div>
+                                    <div class="card-body">
+                                        <table class="table table-borderless">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col" style="width:45%">技術</th>
+                                                <th scope="col" style="width:55%">習熟度</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row"><i class="fab fa-laravel"></i>&nbsp;Laravel</th>
+                                                    <td><meter value="0.7"></meter><span style="margin-left: 15px">70%</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><i class="fab fa-bootstrap"></i>&nbsp;Bootstrap</th>
+                                                    <td><meter value="0.5"></meter><span style="margin-left: 15px">50%</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><i class="devicon-jquery-plain"></i>&nbsp;jQuery</th>
+                                                    <td><meter value="0.3"></meter><span style="margin-left: 15px">30%</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mt-4">
+                                <div class="card h-100">
+                                    <div class="card-header font-weight-bold"><i class="fas fa-laptop-code"></i>&nbsp;その他言語</div>
+                                    <div class="card-body">
+                                        <table class="table table-borderless">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col" style="width:45%">技術</th>
+                                                <th scope="col" style="width:55%">習熟度</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row"><i class="devicon-c-plain"></i>&nbsp;C言語</th>
+                                                    <td><meter value="1"></meter><span style="margin-left: 8px">100%</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><i class="devicon-cplusplus-plain"></i>&nbsp;C++</th>
+                                                    <td><meter value="0.8"></meter><span style="margin-left: 15px">80%</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><i class="fab fa-java"></i>&nbsp;Java</th>
+                                                    <td><meter value="0.7"></meter><span style="margin-left: 15px">70%</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><i class="fab fa-python"></i>&nbsp;Python</th>
+                                                    <td><meter value="0.3"></meter><span style="margin-left: 15px">30%</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card-deck text-center">
+                        <div class="row w-100">
+                            <div class="col-lg-4 mt-4">
+                                <div class="card h-100">
+                                    <div class="card-header font-weight-bold"><i class="fas fa-code-branch"></i>&nbsp;競技プログラミング</div>
+                                    <div class="card-body">
+                                        <div class="card-title"><span class="font-weight-bold">各種プログラミングサイトの成績</span></div>
+                                        <table class="table table-borderless">
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row">Atcoder</th>
+                                                <td style="color: #4DB56A">緑 (Rating 900)</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="card-title"><span class="font-weight-bold">各種大会の実績</span></div>
+                                        <table class="table table-borderless">
+                                            <tbody>
+                                            <tr>
+                                                <td>パソコン甲子園2016本戦出場</td>
+                                            </tr>
+                                            <tr>
+                                                <td>スーパーコンピューティングコンテスト2015，2016本戦出場</td>
+                                            </tr>
+                                            <tr>
+                                                <td>第15回日本情報オリンピック本戦出場，本戦での地区別成績優秀者(中部)</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mt-4">
+                                <div class="card h-100">
+                                    <div class="card-header font-weight-bold"><i class="fas fa-tools"></i>&nbsp;開発環境・ツール</div>
+                                    <div class="card-body">
+                                        <table class="table table-borderless">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col" style="width:45%">技術</th>
+                                                <th scope="col" style="width:55%">習熟度</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row"><i class="fab fa-docker"></i>&nbsp;Docker</th>
+                                                <td><meter value="0.3"></meter><span style="margin-left: 15px">30%</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><i class="fab fa-github"></i>&nbsp;Git</th>
+                                                <td><meter value="0.3"></meter><span style="margin-left: 15px">30%</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><i class="fab fa-slack"></i>&nbsp;Slack</th>
+                                                <td><meter value="0.8"></meter><span style="margin-left: 15px">80%</span></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mt-4">
+                                <div class="card h-100">
+                                    <div class="card-header font-weight-bold"><i class="fas fa-clipboard-list"></i>&nbsp;資格</div>
+                                    <div class="card-body">
+                                        <div class="card-title"><span class="font-weight-bold">取得済みの資格</span></div>
+                                        <table class="table table-borderless">
+                                            <tbody>
+                                            <tr>
+                                                <td>基本情報技術者試験</td>
+                                            </tr>
+                                            <tr>
+                                                <td>応用情報技術者試験</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works -->
+    <section class="content-section bg-light pb-5" id="works">
+        <div class="container">
+            <div class="row">
+                <h1 class="d-block mx-auto title-name">Works</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card-deck text-center">
+                        <div class="row w-100">
+                            <div class="col-lg-4 mt-4">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="./img/portfolio_img.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <div class="card-title"><span class="font-weight-bold">Portfolio</span></div>
+                                        <table class="table table-borderless">
+                                            <tbody>
+                                            <tr>
+                                                <td>制作期間：2weeks</td>
+                                            </tr>
+                                            <tr>
+                                                <td>HTML5 / CSS3 / JavaScript / Bootstrap / jQuery</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mt-4">
+                                <div class="card h-100">
+                                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect fill="#868e96" width="100%" height="100%"/><text fill="#dee2e6" dy=".3em" x="50%" y="50%">Image cap</text></svg>
+                                    <div class="card-body">
+                                        <table class="table table-borderless">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col" style="width:45%">技術</th>
+                                                <th scope="col" style="width:55%">習熟度</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row"><i class="fab fa-docker"></i>&nbsp;Docker</th>
+                                                <td><meter value="0.3"></meter><span style="margin-left: 15px">30%</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><i class="fab fa-github"></i>&nbsp;Git</th>
+                                                <td><meter value="0.3"></meter><span style="margin-left: 15px">30%</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><i class="fab fa-slack"></i>&nbsp;Slack</th>
+                                                <td><meter value="0.8"></meter><span style="margin-left: 15px">80%</span></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mt-4">
+                                <div class="card h-100">
+                                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect fill="#868e96" width="100%" height="100%"/><text fill="#dee2e6" dy=".3em" x="50%" y="50%">Image cap</text></svg>
+                                    <div class="card-body">
+                                        <div class="card-title"><span class="font-weight-bold">取得済みの資格</span></div>
+                                        <table class="table table-borderless">
+                                            <tbody>
+                                            <tr>
+                                                <td>基本情報技術者試験</td>
+                                            </tr>
+                                            <tr>
+                                                <td>応用情報技術者試験</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="row">
+                <div class="col-md-12 mt-4 mb-5">
+                    <div class="card-group">
+                        <div class="card">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect fill="#868e96" width="100%" height="100%"/><text fill="#dee2e6" dy=".3em" x="50%" y="50%">Image cap</text></svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect fill="#868e96" width="100%" height="100%"/><text fill="#dee2e6" dy=".3em" x="50%" y="50%">Image cap</text></svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect fill="#868e96" width="100%" height="100%"/><text fill="#dee2e6" dy=".3em" x="50%" y="50%">Image cap</text></svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="row">
+              <h1 class="d-block mx-auto title-name-stripe">Contact</h1>
+            </div>
+            <div class="row">
+              <div class="col-md-12 text-center text-stripe mt-4">
+                  <h5 class="mb-4">何かありましたら以下のgoogleフォームからご連絡ください．</h5>
+                  <ul class="list-inline mb-5">
+                      <li class="list-inline-item">
+                          <a class="contact-link rounded-circle" href="https://docs.google.com/forms/d/e/1FAIpQLSe-AFBghXGy4RCrUUPDU05KuSLNL1zUIBvsqqsXNeWjdx13ZA/viewform?usp=sf_link" target=”_blank”>
+                              <i class="fab fa-google"></i>
+                          </a>
+                      </li>
+                  </ul>
+                  <ul class="list-inline footer-menu mb-1">
+                      <li class="list-inline-item list-title">
+                          <a href="#page-top">R4nSC Portfolio</a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="#about">About</a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="#skills">Skills</a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="#works">Works</a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="#contact">Contact</a>
+                      </li>
+                  </ul>
+              </div>
+            </div>
+        </div>
+      <div class="copy-right">
+          <span>最終更新日: 2021年1月1日</span><br>
+          <span>Copyright &copy; 2020 <a href="https://github.com/R4nSC" style="color:#CCCCCC;">Ren Takeuchi.</a> All Rights Reserved.</span>
       </div>
     </footer>
+    <a class="scroll-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
 </body>
 </html>
