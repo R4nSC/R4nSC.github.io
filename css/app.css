@@ -3,6 +3,18 @@
 	src: url(../fonts/KaushanScript-Regular.ttf);
 }
 
+a.works-card {
+    transition: 0.5s;
+    background-color: #fff;
+    text-decoration: none;
+    color:#000;
+}
+
+a.works-card:hover{
+    transition: 0.5s;
+    background-color: #dddddd;
+}
+
 a.link-sentence {
     transition: 0.5s;
     color: #0917d3fb;
