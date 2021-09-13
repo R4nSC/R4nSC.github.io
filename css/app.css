@@ -95,7 +95,7 @@ a.link-git {
     font-size: 20px;
 }
 
-section#about, section#skills, section#works, section#contact, section#researchs {
+section#about, section#skills, section#works, section#contact, section#researchs, section#internships {
     padding-top: 50px;
     padding-bottom: 60px;
 }
@@ -202,4 +202,15 @@ li.list-title {
 
 .scroll-top:hover {
     color: #ffffff;
+}
+
+.title-internships {
+    font-size:20px;
+    font-weight: bold; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.table-internships td, .table-internships th  {
+    vertical-align: middle;
 }
